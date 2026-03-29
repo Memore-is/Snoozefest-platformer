@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://blefoip6fp2do"]
+[gd_scene format=3 uid="uid://blefoip6fp2do"]
 
 [ext_resource type="Texture2D" uid="uid://cskn47o14g6uh" path="res://assets/Free Pixel Art Forest/Preview/Background.png" id="1_vjb58"]
 [ext_resource type="Script" uid="uid://bd8scferoh6ti" path="res://scenes/buttonduh.gd" id="2_con2f"]
@@ -6,10 +6,14 @@
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cm0pq"]
 texture = ExtResource("1_vjb58")
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu6xs"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
 bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 24
+corner_radius_top_right = 24
+corner_radius_bottom_right = 24
+corner_radius_bottom_left = 24
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0du0"]
 corner_radius_top_left = 24
 corner_radius_top_right = 24
 corner_radius_bottom_right = 24
@@ -22,24 +26,20 @@ corner_radius_top_right = 24
 corner_radius_bottom_right = 24
 corner_radius_bottom_left = 24
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r0du0"]
-corner_radius_top_left = 24
-corner_radius_top_right = 24
-corner_radius_bottom_right = 24
-corner_radius_bottom_left = 24
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fos0i"]
 bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 24
 corner_radius_top_right = 24
 corner_radius_bottom_right = 24
 corner_radius_bottom_left = 24
 
-[node name="Node2D" type="Control"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu6xs"]
+
+[node name="Node2D" type="Control" unique_id=1057767942]
 layout_mode = 3
 anchors_preset = 0
 
-[node name="Panel" type="Panel" parent="."]
+[node name="Panel" type="Panel" parent="." unique_id=117440897]
 layout_mode = 0
 offset_left = -1755.0
 offset_top = -1457.0
@@ -49,7 +49,7 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxTexture_cm0pq")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=517282939]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -66,7 +66,7 @@ size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 100
 text = "Le Silence"
 
-[node name="Button" type="Button" parent="."]
+[node name="Button" type="Button" parent="." unique_id=1711544241]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -79,18 +79,18 @@ offset_right = 131.0
 offset_bottom = 161.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 50
-theme_override_styles/focus = SubResource("StyleBoxEmpty_uu6xs")
-theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fos0i")
-theme_override_styles/hover = SubResource("StyleBoxFlat_uu6xs")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_r0du0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cm0pq")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_r0du0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uu6xs")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fos0i")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_uu6xs")
 text = "Start"
 script = ExtResource("2_con2f")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1687151000]
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
