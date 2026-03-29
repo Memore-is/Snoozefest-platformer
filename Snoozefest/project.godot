@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Game"
+run/main_scene="uid://blefoip6fp2do"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/size/mode=3
 
 [editor_plugins]
 
