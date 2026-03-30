@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://bxig4sqn8sn7j"]
+[gd_scene format=3 uid="uid://u2366j7qtx85"]
 
-[ext_resource type="Texture2D" uid="uid://cskn47o14g6uh" path="res://assets/Free Pixel Art Forest/Preview/Background.png" id="1_fyrdv"]
-[ext_resource type="Script" uid="uid://dix6ok231mei5" path="res://gamebutton.gd" id="2_fyrdv"]
+[ext_resource type="Texture2D" uid="uid://cskn47o14g6uh" path="res://assets/Free Pixel Art Forest/Preview/Background.png" id="1_yjqpq"]
+[ext_resource type="Script" uid="uid://dix6ok231mei5" path="res://gamebutton.gd" id="2_yjqpq"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cm0pq"]
-texture = ExtResource("1_fyrdv")
+texture = ExtResource("1_yjqpq")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cm0pq"]
 bg_color = Color(1, 1, 1, 1)
@@ -51,34 +51,24 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_cm0pq")
 
 [node name="Label" type="Label" parent="." unique_id=517282939]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -213.0
-offset_top = -204.0
-offset_right = 213.0
-offset_bottom = -67.0
-grow_horizontal = 2
-grow_vertical = 2
+offset_left = -921.0
+offset_top = -681.0
+offset_right = 939.0
+offset_bottom = 16.0
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 100
-text = "Le Silence"
+text = "Dear tree whisperer,
+My roots are killing me silently.
+Those around me are loud with life,
+While I can barely croak out a whisper.
+Can you heal me?"
 
 [node name="Button" type="Button" parent="." unique_id=1711544241]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
 offset_left = -132.0
 offset_top = 92.0
 offset_right = 131.0
 offset_bottom = 161.0
-grow_horizontal = 2
-grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
@@ -88,8 +78,8 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_r0du0")
 theme_override_styles/hover = SubResource("StyleBoxFlat_uu6xs")
 theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fos0i")
 theme_override_styles/focus = SubResource("StyleBoxEmpty_uu6xs")
-text = "Start"
-script = ExtResource("2_fyrdv")
+text = "I accept"
+script = ExtResource("2_yjqpq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1687151000]
 

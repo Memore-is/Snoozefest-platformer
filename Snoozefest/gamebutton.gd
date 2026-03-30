@@ -12,4 +12,4 @@ func _process(delta):
 
 
 func _on_pressed() -> void: #menu
-	get_tree().change_scene_to_file("res://scenes/intro.tscn") # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/main.tscn") # Replace with function body.
