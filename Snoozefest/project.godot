@@ -16,7 +16,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 config/name="Game"
 run/main_scene="uid://blefoip6fp2do"
-config/features=PackedStringArray("4.6", "Forward Plus")
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
@@ -24,6 +24,7 @@ config/icon="res://icon.svg"
 window/size/viewport_width=100
 window/size/viewport_height=50
 window/size/mode=3
+window/stretch/aspect="expand"
 
 [editor_plugins]
 
