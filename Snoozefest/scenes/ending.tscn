@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cskn47o14g6uh" path="res://assets/Free Pixel Art Forest/Preview/Background.png" id="1_fyrdv"]
 [ext_resource type="Script" uid="uid://dix6ok231mei5" path="res://gamebutton.gd" id="2_fyrdv"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cm0pq"]
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_fyrdv"]
 texture = ExtResource("1_fyrdv")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu6xs"]
@@ -41,13 +41,13 @@ anchors_preset = 0
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 0
-offset_left = -1755.0
-offset_top = -1457.0
-offset_right = 1453.0
-offset_bottom = 504.0
+offset_left = -1915.0
+offset_top = -1896.0
+offset_right = 2545.0
+offset_bottom = 1530.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxTexture_cm0pq")
+theme_override_styles/panel = SubResource("StyleBoxTexture_fyrdv")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -64,7 +64,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 theme_override_font_sizes/font_size = 100
-text = "Le Silence"
+text = "Congratulations!"
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -88,7 +88,8 @@ theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_fos0i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_uu6xs")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_r0du0")
 theme_override_styles/normal = SubResource("StyleBoxFlat_cm0pq")
-text = "Start"
+text = "Replay
+"
 script = ExtResource("2_fyrdv")
 
 [node name="Camera2D" type="Camera2D" parent="."]
